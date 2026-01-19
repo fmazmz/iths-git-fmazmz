@@ -1,0 +1,49 @@
+mkdir iths-git-fmazmz
+cd iths-git-fmazmz
+git init -b main
+touch README.md
+nano README.md
+git add README.md
+git commit -m "Initial commit"
+git checkout -b feature1
+nano README.md
+git add README.md
+git commit -m "add dog to readme and update moose to mouse"
+git checkout main
+nano README.md
+git add README.md
+git commit -m "update moose to mammoth"
+git merge feature1
+nano README.md
+git add README.md
+git commit
+git tag extinct
+git reset --hard HEAD~1
+git branch feature2
+nano README.md
+git add README.md
+git commit -m "make all entries in README start with uppercase letter"
+git checkout feature2
+touch fix1.txt
+git add fix1.txt
+git commit -m "create fix1.txt"
+touch fix2.txt
+git add fix2.txt
+git commit -m "create fix2.txt"
+git checkout main
+git cherry-pick b8af512
+git checkout -b cleanup_test
+nano README.md
+git add README.md
+git commit -m "add bird to README"
+nano README.md
+git add README.md
+git commit -m "add fish to README"
+nano README.md
+git add README.md
+git commit -m "add snake to README"
+git rebase -i HEAD~3
+nano README.md
+git add README.md
+git commit -m "addid turtle"
+git commit --amend -m "added turtle"
